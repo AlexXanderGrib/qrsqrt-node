@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "*.env.development": "env",
+    "*.env.production": "env",
+    "node.h": "c",
+    "napi.h": "c",
+    "js_native_api.h": "c",
+    "system_error": "c",
+    "*.tcc": "cpp",
+    "functional": "c",
+    "stdint.h": "c",
+    "rsqrt.h": "c"
+  }
+}

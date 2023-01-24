@@ -1,0 +1,1 @@
+cmd_Release/obj.target/rsqrt.node := g++ -o Release/obj.target/rsqrt.node -shared -pthread -rdynamic -m64  -Wl,-soname=rsqrt.node -Wl,--start-group Release/obj.target/rsqrt/src/addon.o Release/obj.target/rsqrt/src/rsqrt.o -Wl,--end-group 
