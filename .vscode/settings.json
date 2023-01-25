@@ -9,6 +9,9 @@
     "*.tcc": "cpp",
     "functional": "c",
     "stdint.h": "c",
-    "rsqrt.h": "c"
+    "rsqrt.h": "c",
+    "stdlib.h": "c",
+    "stddef.h": "c",
+    "random": "c"
   }
 }

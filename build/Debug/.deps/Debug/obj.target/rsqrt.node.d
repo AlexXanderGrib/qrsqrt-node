@@ -1,0 +1,1 @@
+cmd_Debug/obj.target/rsqrt.node := g++ -o Debug/obj.target/rsqrt.node -shared -pthread -rdynamic -m64  -Wl,-soname=rsqrt.node -Wl,--start-group Debug/obj.target/rsqrt/src/addon.o Debug/obj.target/rsqrt/src/rsqrt.o -Wl,--end-group 

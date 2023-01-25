@@ -1,7 +1,10 @@
-union convert { float f; unsigned int i; };
+#include <stddef.h>
+#include <stdint.h>
+
+union convert { float f; int32_t i; };
 
 const float threeHalfs = 1.5F;
-const unsigned int magic = 0x5f3759df;
+const int32_t magic = 0x5f3759df;
 
 float Q_rsqrt(float number)
 {	
@@ -14,3 +17,9 @@ float Q_rsqrt(float number)
 	return converter.f;
 }
 
+
+void Q_rsqrt_vec(size_t size, float* array) {
+	for (size_t i = 0; i < size; i++) {
+		array[i] = Q_rsqrt(array[i]);
+	}
+}
